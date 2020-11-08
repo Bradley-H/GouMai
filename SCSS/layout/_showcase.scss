@@ -1,0 +1,75 @@
+.showcase {
+  height: 400px;
+  background-color: $primaryColor;
+  color: $primaryFontColor;
+  position: relative;
+  &-text {
+    animation: SlideinLeft 1s ease-in;
+    @include tablet {
+      animation: SlideinTop 1s ease-in;
+    }
+  }
+  @include tablet {
+    height: auto;
+  }
+
+  @include tablet {
+    &-text {
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  p {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+
+  .showcase-form {
+    position: relative;
+    top: 4.5rem;
+    height: 345px;
+    width: 355px;
+    padding: 3.5rem;
+    z-index: 4;
+    justify-self: flex-end;
+    animation: SlideinRight 1.2s ease-in;
+
+    @include tablet {
+      justify-self: center;
+      margin: auto;
+    }
+  }
+
+  .form-control {
+    margin: 22px 2px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    border: 0;
+    border-bottom: 2px solid rgb(239, 239, 239);
+    width: 100%;
+    padding: 4px;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 7rem;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: white;
+    transform: skewY(-2.4deg);
+  }
+}

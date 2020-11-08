@@ -1,0 +1,8 @@
+footer {
+  @include tablet {
+    .grid {
+      grid-template-columns: 1fr 28%;
+      margin-right: 0.75rem;
+    }
+  }
+}

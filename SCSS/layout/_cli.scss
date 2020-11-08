@@ -1,0 +1,40 @@
+.cli {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+    h3 {
+      @include mobile {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  samp {
+    width: 19rem;
+    background-color: #002240;
+    height: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 3rem;
+  }
+}
+
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  @include tablet {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 auto;
+  }
+  @include mobile {
+    margin: 0 auto;
+  }
+}

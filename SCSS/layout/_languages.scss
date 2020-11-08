@@ -1,0 +1,19 @@
+.languages {
+  .card {
+    text-align: center;
+    transition: $primaryAnimation;
+    &:hover {
+      transform: translateY(-15px);
+    }
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}

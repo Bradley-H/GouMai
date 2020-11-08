@@ -1,0 +1,33 @@
+footer {
+  position: relative;
+  bottom: -110%;
+  background-color: $primaryColor;
+  min-width: 100vw;
+  color: white;
+  font-weight: bold;
+
+  ul {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .social {
+    @include tablet {
+      transform: translate(45%, 1.6rem);
+    }
+    @include mobile {
+      transform: translate(35%, 1rem);
+    }
+  }
+  a {
+    margin: 1rem 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+}

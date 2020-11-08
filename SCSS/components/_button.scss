@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  cursor: pointer;
+  background: $primaryColor;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  transition: $primaryAnimation;
+
+  &-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+  &-primary {
+    background-color: $primaryColor;
+    width: 8.5rem;
+    font-weight: bold;
+  }
+  &-secondary {
+    background-color: $secondaryColor;
+    width: 8.5rem;
+    font-weight: bold;
+  }
+  &-dark {
+    background-color: $darkColor;
+  }
+}

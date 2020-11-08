@@ -1,0 +1,137 @@
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: visible;
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.alert {
+  background-color: $lightColor;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin: 15px;
+  i {
+    margin-right: 10px;
+  }
+  &-success {
+    background-color: $successColor;
+    color: white;
+  }
+  &-danger {
+    background-color: $dangerColor;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0 0.34rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@for $i from 1 through 5 {
+  .my-#{$i} {
+    margin: #{$i}rem 0;
+  }
+}
+
+@for $i from 1 through 5 {
+  .m-#{$i} {
+    margin: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 5 {
+  .py-#{$i} {
+    padding: #{$i}rem 0;
+  }
+}
+
+@for $i from 1 through 5 {
+  .p-#{$i} {
+    padding: #{$i}rem;
+  }
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: $primaryColor;
+  color: white;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: $secondaryColor;
+  color: white;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: $darkColor;
+  color: white;
+}
+
+.bg-light,
+.btn-light {
+  background-color: $lightColor;
+  color: black;
+}
+
+.text-primary,
+.text-primary {
+  color: $primaryColor;
+}
+
+.text-secondary,
+.text-secondary {
+  color: $secondaryColor;
+}
+
+.text-dark,
+.text-dark {
+  color: $darkColor;
+}
+
+.text-light,
+.text-light {
+  color: $lightColor;
+}
+
+// TEXT SIZES //
+
+.sm {
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1.4rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 3.3rem;
+}

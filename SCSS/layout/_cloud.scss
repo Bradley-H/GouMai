@@ -1,0 +1,12 @@
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+  font-weight: bold;
+  h2 {
+    @include mobile {
+      font-size: 34px;
+    }
+    @include tablet {
+      font-size: 37px;
+    }
+  }
+}

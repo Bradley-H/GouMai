@@ -1,0 +1,33 @@
+.navbar {
+  background-color: $primaryColor;
+  color: $primaryFontColor;
+  @include mobile {
+    height: 110px;
+  }
+
+  .flex {
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  ul {
+    display: flex;
+    @include mobile {
+      padding: 15px;
+      background-color: rgba($color: #000000, $alpha: 0.15);
+    }
+  }
+
+  a {
+    color: white;
+    padding: 10px;
+    margin: 0 8px;
+    transition: $primaryAnimation;
+    font-weight: bold;
+    &:hover {
+      border-bottom: 1px solid white;
+      border-radius: 3%;
+    }
+  }
+}
