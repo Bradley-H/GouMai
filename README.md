@@ -2,4 +2,4 @@ This is a cloud company website with a slick design that includes installation i
 
 
 Technology used:
-JS (with typescript), HTML (With PUGjs), CSS (with sass)
+HTML, CSS (With SASS)
